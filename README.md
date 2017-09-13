@@ -4,9 +4,6 @@ Roguelytics
 
 ## Documentation valid for `master` branch
 
-Please check the documentation for the paperclip version you are using:
-https://github.com/thoughtbot/paperclip/releases
-
 - [Requirements](#requirements)
   - [Ruby and Rails](#ruby-and-rails)
   - [ActiveJob](#activejob)
@@ -18,8 +15,9 @@ https://github.com/thoughtbot/paperclip/releases
   - [Business Object Monitoring](#business-object-monitoring)
 
 
-Roguelytic’s platform uniquely offers  *on-page analytics*. Unlike other platforms, Roguelytics does not require users to login to separate sites, as well as simplifying data for user-friendly consumption. By enhancing the usability and functionality of data, we equip customers with the tools to understand, track, forecast, and interpret user behavior and activity.  Through clarity and simple metrics, customers can quickly make more accurate business decisions rather than second guessing if they’re understanding or interpreting metrics correctly.
+[Roguelytics](https://www.roguelytics.com?utm_source=github) platform uniquely offers  *on-page analytics*. Unlike other platforms, Roguelytics does not require users to login to separate sites, as well as simplifying data for user-friendly consumption. By enhancing the usability and functionality of data, we equip customers with the tools to understand, track, forecast, and interpret user behavior and activity.  Through clarity and simple metrics, customers can quickly make more accurate business decisions rather than second guessing if they’re understanding or interpreting metrics correctly.
 
+Roguelytics was created by [RogueStudios](https://www.roguestudios.com?utm_source=github).
 
 Requirements
 ------------
@@ -87,9 +85,11 @@ class Article < ActiveRecord::Base
 end
 ```
 
-Roguelytics create an ActiveJob for each of the following actions: CREATE, UPDATE, DELETE.
+Roguelytics create an ActiveJob for each of the following actions: CREATE, UPDATE, DELETE. 
 
-The GEM will pass the object's class name and ID to Roguelytics. IF the model responds to "name", the name of the model will also be passed and can be used for reporting.
+Note: when running in *DEVELOPMENT* mode, the ActiveJob will run in the foreground (perform now). In all other modes, it will be enqueued and run later (perform later). You must setup ActiveJob with a backend. Instructions are [here](http://edgeguides.rubyonrails.org/active_job_basics.html)
+
+The GEM will pass the object's class name and ID to Roguelytics. If the model responds to "name", the name of the model will also be passed and can be used for reporting.
 
 Contributing
 ------------
