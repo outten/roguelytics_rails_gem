@@ -14,21 +14,12 @@ https://github.com/thoughtbot/paperclip/releases
 - [Quick Start](#quick-start)
   - [Sign Up](#sign-up)
   - [Configuration](#configuration)
-  - [View Helper](#view-helper)
-  - [Models](#models)
+  - [View Helper For Page Tracking](#view-helper-for-page-tracking)
+  - [Business Object Monitoring](#business-object-monitoring)
 
 
-Paperclip is intended as an easy file attachment library for ActiveRecord. The
-intent behind it was to keep setup as easy as possible and to treat files as
-much like other attributes as possible. This means they aren't saved to their
-final locations on disk, nor are they deleted if set to nil, until
-ActiveRecord::Base#save is called. It manages validations based on size and
-presence, if required. It can transform its assigned image into thumbnails if
-needed, and the prerequisites are as simple as installing ImageMagick (which,
-for most modern Unix-based systems, is as easy as installing the right
-packages). Attached files are saved to the filesystem and referenced in the
-browser by an easily understandable specification, which has sensible and
-useful defaults.
+Roguelytic’s platform uniquely offers  *on-page analytics*. Unlike other platforms, Roguelytics does not require users to login to separate sites, as well as simplifying data for user-friendly consumption. By enhancing the usability and functionality of data, we equip customers with the tools to understand, track, forecast, and interpret user behavior and activity.  Through clarity and simple metrics, customers can quickly make more accurate business decisions rather than second guessing if they’re understanding or interpreting metrics correctly.
+
 
 Requirements
 ------------
@@ -65,7 +56,7 @@ The GEM comes with a generator that creates an initializer file for
 rails generate roguelytics
 ```
 
-### View Helper
+### View Helper For Page Tracking
 
 The GEM provides a view helper *rogueltyics* that should be included in layouts for each page you want tracked. Just incuded the view helper in the layout right before the closing *body* tag. See below:
 
@@ -85,9 +76,8 @@ The GEM provides a view helper *rogueltyics* that should be included in layouts 
 </html>
 ```
 
-### Models
+### Business Object Monitoring
 
-Roguelytics 
 For each model that you want Roguelytics to monitor, add the following two lines:
 
 ```ruby
@@ -116,9 +106,9 @@ redistributed under the terms specified in the MIT-LICENSE file.
 About Rogue Studios
 -------------------
 
-[RogueStudios]: https://thoughtbot.com?utm_source=github
+[RogueStudios](https://www.roguestudios.com?utm_source=github)
 
 Roguelytics GEM is maintained and funded by Rogue Studios.
 The names and logos for thoughtbot are trademarks of Rogue Studios, LLC.
 
-[RogueStudios]: https://thoughtbot.com?utm_source=github
+[RogueStudios](https://www.roguestudios.com?utm_source=github)
