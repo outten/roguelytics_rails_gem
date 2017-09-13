@@ -7,8 +7,8 @@ require "roguelytics/version"
 Gem::Specification.new do |s|
   s.name        = "roguelytics"
   s.version     = Roguelytics::VERSION
-  s.authors     = ["outten"]
-  s.email       = ["outten@me.com"]
+  s.authors     = ["Todd Outten"]
+  s.email       = ["todd@roguestudios.io"]
   s.homepage    = "http://www.roguestudios.io"
   s.summary     = "Summary of Roguelytics."
   s.description = "Description of Roguelytics."

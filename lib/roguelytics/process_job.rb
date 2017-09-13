@@ -9,9 +9,7 @@ module Roguelytics
 
 			params[:sitekey] = ROGUELYTICS_SITEKEY
 
-			url_base = "http://localhost:3000"
-			url_base = "https://roguelytics-staging.roguestartup.com" if Rails.env.production?
-			url_base = "https://roguelytics-staging.roguestartup.com" if Rails.env.staging?
+			url_base = "https://www.roguelytics.com"
 
 			if event == 'create'
 				url = "#{url_base}/api/v1/site_event/create.json"
@@ -24,10 +22,13 @@ module Roguelytics
 				return
 			end
 
-			uri 		= URI url
-			uri.query 	= URI.encode_www_form(params)
-			res 		= Net::HTTP.get_response(uri)
-			puts res.body if res.is_a?(Net::HTTPSuccess)
+			#begin
+				uri 		= URI url
+				uri.query 	= URI.encode_www_form(params)
+				res 		= Net::HTTP.get_response(uri)
+				puts res.body if res.is_a?(Net::HTTPSuccess)
+			#rescue
+			#end
 
 			true
 		end
