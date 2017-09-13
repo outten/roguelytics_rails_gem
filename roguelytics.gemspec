@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Roguelytics::VERSION
   s.authors     = ["Todd Outten"]
   s.email       = ["todd@roguestudios.io"]
-  s.homepage    = "http://www.roguestudios.io"
+  s.homepage    = "https://github.com/outten/roguelytics_rails_gem"
   s.summary     = "Rogueyltics is an Web Page and Business Model/Object Analytics Package for Ruby on Rails."
   s.description = "Roguelytic’s platform uniquely offers  on-page analytics. Unlike other platforms, Roguelytics does not require users to login to separate sites, as well as simplifying data for user-friendly consumption. By enhancing the usability and functionality of data, we equip customers with the tools to understand, track, forecast, and interpret user behavior and activity.  Through clarity and simple metrics, customers can quickly make more accurate business decisions rather than second guessing if they’re understanding or interpreting metrics correctly."
   s.license     = "MIT"
