@@ -46,6 +46,11 @@ Quick Start
 
 ### Sign Up
 
+Sign Up for an account at [Roguelytics](https://www.roguelytics.com/sign_up?utm_source=github).
+
+Create a SITE to get your KEYS.
+
+
 ### Configuration
 
 The GEM comes with a generator that creates an initializer file for 
@@ -53,6 +58,10 @@ The GEM comes with a generator that creates an initializer file for
 ```ruby
 rails generate roguelytics
 ```
+
+After you run the generator, a confiration file will be created: config/initializers/roguelytics.rb
+
+Add your site's KEYS to this file.
 
 ### View Helper For Page Tracking
 
