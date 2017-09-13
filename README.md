@@ -106,8 +106,6 @@ redistributed under the terms specified in the MIT-LICENSE file.
 About Rogue Studios
 -------------------
 
-[RogueStudios](https://www.roguestudios.com?utm_source=github)
-
 Roguelytics GEM is maintained and funded by Rogue Studios.
 The names and logos for thoughtbot are trademarks of Rogue Studios, LLC.
 
