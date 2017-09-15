@@ -1,14 +1,15 @@
 require 'rails/generators'
 
 module Roguelytics
-	module Generators
-		class RoguelyticsGenerator < Rails::Generators::Base
+	class InitializerGenerator < Rails::Generators::Base
 
-			namespace "roguelytics"
-			desc "This generator creates an initializer file at config/initializers for Roguelytics"
+		source_root File.expand_path("../templates", __FILE__)
 
-			def create_initializer_file
-				create_file "config/initializers/roguelytics.rb", "
+		namespace "roguelytics"
+		desc "This generator creates an initializer file at config/initializers for Roguelytics"
+
+		def create_initializer_file
+			create_file "config/initializers/roguelytics.rb", "
 #
 # Roguelytics Initializer
 #
@@ -18,7 +19,6 @@ ROGUELYTICS_SITEKEY = '' if Rails.env.development?
 ROGUELYTICS_SITEKEY = '' if Rails.env.qa?
 ROGUELYTICS_SITEKEY = '' if Rails.env.test?
 "
-			end
 		end
 	end
 end	
