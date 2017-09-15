@@ -13,6 +13,7 @@ Roguelytics
   - [Configuration](#configuration)
   - [View Helper For Page Tracking](#view-helper-for-page-tracking)
   - [Business Object Monitoring](#business-object-monitoring)
+  - [Example Rails Application](#example-rails-application)
 - [OpenSSL Errors](#openssl-errors)
 - [Contributing](#contributing)
 - [License](#license)
@@ -60,7 +61,7 @@ Roguelytics is distributed as a gem, which is how it should be used in your app.
 Include the gem in your Gemfile:
 
 ```ruby
-gem "roguelytics"
+gem 'roguelytics', '~> 1.0.12'
 ```
 
 Quick Start
@@ -72,7 +73,7 @@ To install Roguelytics to your website, you will need to sign up for an account 
 
 Sign Up by visiting: [Roguelytics](https://www.roguelytics.com/sign_up?utm_source=github).
 
-*Step 1*: Add A Site - Create a name by adding a new site. This will generate your keys and tracking code. Add multiple sites the same way –tracking code is unique per site.  
+*Step 1*: Add A Site - Create a name by adding a new site. This will generate your keys and tracking code. Add multiple sites the same way –tracking code is unique per site.
 
 *Step 2*: Add Tracking Code - Under your Network of sites you’ll find your “Production” environment Key. This is your unique tracking code that goes into your SEO or Footer Files on your website. Simply copy and paste! 
 
@@ -134,6 +135,10 @@ Roguelytics create an ActiveJob for each of the following actions: CREATE, UPDAT
 Note: when running in *DEVELOPMENT* mode, the ActiveJob will run in the foreground (perform now). In all other modes, it will be enqueued and run later (perform later). You must setup ActiveJob with a backend. Instructions are [here](http://edgeguides.rubyonrails.org/active_job_basics.html)
 
 The GEM will pass the object's class name and ID to Roguelytics. If the model responds to "name", the name of the model will also be passed and can be used for reporting.
+
+### Example Rails Application
+
+An example rails application is located here: https://github.com/outten/roguelytics_example_rails4
 
 OpenSSL Errors
 --------------
