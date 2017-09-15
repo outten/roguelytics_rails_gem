@@ -79,15 +79,20 @@ Sign Up by visiting: [Roguelytics](https://www.roguelytics.com/sign_up?utm_sourc
 
 ### Configuration
 
-The GEM comes with a generator that creates an initializer file for 
+After you sign-up and get your guys, create a confiration file: config/initializers/roguelytics.rb
 
 ```ruby
-rails generate roguelytics
+#
+# Roguelytics Initializer
+#
+ROGUELYTICS_SITEKEY = '' if Rails.env.production?
+ROGUELYTICS_SITEKEY = '' if Rails.env.staging?
+ROGUELYTICS_SITEKEY = '' if Rails.env.development?
+ROGUELYTICS_SITEKEY = '' if Rails.env.qa?
+ROGUELYTICS_SITEKEY = '' if Rails.env.test?
 ```
 
-After you run the generator, a confiration file will be created: config/initializers/roguelytics.rb
-
-Add your site's KEYS to this file.
+Add your site's KEYS to this file for each environment.
 
 ### View Helper For Page Tracking
 
