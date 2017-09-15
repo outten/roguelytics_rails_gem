@@ -85,11 +85,11 @@ After you sign-up and get your guys, create a confiration file: config/initializ
 #
 # Roguelytics Initializer
 #
-ROGUELYTICS_SITEKEY = '' if Rails.env.production?
-ROGUELYTICS_SITEKEY = '' if Rails.env.staging?
-ROGUELYTICS_SITEKEY = '' if Rails.env.development?
-ROGUELYTICS_SITEKEY = '' if Rails.env.qa?
-ROGUELYTICS_SITEKEY = '' if Rails.env.test?
+ROGUELYTICS_SITEKEY = '<production key>' if Rails.env.production?
+ROGUELYTICS_SITEKEY = '<staging key>' if Rails.env.staging?
+ROGUELYTICS_SITEKEY = '<development key>' if Rails.env.development?
+ROGUELYTICS_SITEKEY = '<qa key>' if Rails.env.qa?
+ROGUELYTICS_SITEKEY = '<test key>' if Rails.env.test?
 ```
 
 Add your site's KEYS to this file for each environment.
