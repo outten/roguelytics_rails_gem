@@ -1,4 +1,6 @@
-module Devise
+require 'rails/generators'
+
+module Roguelytics
 	module Generators
 		class RoguelyticsGenerator < Rails::Generators::Base
 

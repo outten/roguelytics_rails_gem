@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    roguelytics (1.0.8)
+    roguelytics (1.0.9)
       activejob (>= 4.2)
       rails (~> 4.2.1)
 

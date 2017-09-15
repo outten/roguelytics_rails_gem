@@ -83,7 +83,7 @@ Sign Up by visiting: [Roguelytics](https://www.roguelytics.com/sign_up?utm_sourc
 
 ### Configuration
 
-After you sign-up and get your guys, create a configuration file: config/initializers/roguelytics.rb
+After you sign-up and get your keys, create a configuration file: config/initializers/roguelytics.rb
 
 ```ruby
 #
