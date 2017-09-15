@@ -13,6 +13,10 @@ Roguelytics
   - [Configuration](#configuration)
   - [View Helper For Page Tracking](#view-helper-for-page-tracking)
   - [Business Object Monitoring](#business-object-monitoring)
+- [OpenSSL Errors](#openssl-errors)
+- [Contributing](#contributing)
+- [License](#license)
+- [About Rogue Studios](#about-rogue-studios)
 
 
 [Roguelytics](https://www.roguelytics.com?utm_source=github) The Only TRUE On-Page Analytics Platform
@@ -79,7 +83,7 @@ Sign Up by visiting: [Roguelytics](https://www.roguelytics.com/sign_up?utm_sourc
 
 ### Configuration
 
-After you sign-up and get your guys, create a confiration file: config/initializers/roguelytics.rb
+After you sign-up and get your guys, create a configuration file: config/initializers/roguelytics.rb
 
 ```ruby
 #
@@ -130,6 +134,24 @@ Roguelytics create an ActiveJob for each of the following actions: CREATE, UPDAT
 Note: when running in *DEVELOPMENT* mode, the ActiveJob will run in the foreground (perform now). In all other modes, it will be enqueued and run later (perform later). You must setup ActiveJob with a backend. Instructions are [here](http://edgeguides.rubyonrails.org/active_job_basics.html)
 
 The GEM will pass the object's class name and ID to Roguelytics. If the model responds to "name", the name of the model will also be passed and can be used for reporting.
+
+OpenSSL Errors
+--------------
+
+In *development* mode on a Mac, you may get the following error:
+
+
+```ruby
+SSL_connect returned=1 errno=0 state=error: certificate verify failed
+```
+
+If you get this error, you can add the following to your configuration file: config/initializers/roguelytics.rb
+
+```ruby
+if Rails.env.development? #or Rails.env.staging?
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE 
+end
+```
 
 Contributing
 ------------
