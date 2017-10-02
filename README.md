@@ -103,7 +103,7 @@ Add your site's KEYS to this file for each environment.
 
 The GEM provides a view helper *rogueltyics* that should be included in layouts for each page you want tracked. Just incuded the view helper in the layout right before the closing *body* tag. See below:
 
-```ruby
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -167,7 +167,7 @@ If you'd like to contribute a feature or bugfix: Thanks! Send us an email: devel
 License
 -------
 
-Paperclip is Copyright © 2017 Rogue Studios, LLC. It is free software, and may be
+Roguelytics is Copyright © 2017 Rogue Studios, LLC. It is free software, and may be
 redistributed under the terms specified in the MIT-LICENSE file.
 
 About Rogue Studios
@@ -176,4 +176,4 @@ About Rogue Studios
 Roguelytics GEM is maintained and funded by Rogue Studios.
 The names and logos for thoughtbot are trademarks of Rogue Studios, LLC.
 
-[RogueStudios](https://www.roguestudios.com?utm_source=github)
+[RogueStudios](https://www.roguestudios.io?utm_source=github)
