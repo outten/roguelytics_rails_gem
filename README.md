@@ -20,7 +20,7 @@ Roguelytics
 - [About Rogue Studios](#about-rogue-studios)
 
 
-[Roguelytics](https://www.roguelytics.com?utm_source=github) The Only TRUE On-Page Analytics Platform
+[Roguelytics](https://www.roguelytics.com) The Only TRUE On-Page Analytics Platform
 
 ### On-Page and Never Out of Sight. 
 Logging into separate portals is a thing of the past. By natively placing analytics on-page, your analytics are never out of sight or out of mind. 
@@ -176,4 +176,4 @@ About Rogue Studios
 Roguelytics GEM is maintained and funded by Rogue Studios.
 The names and logos for thoughtbot are trademarks of Rogue Studios, LLC.
 
-[RogueStudios](https://www.roguestudios.io?utm_source=github)
+[RogueStudios](http://www.roguestudios.io)
