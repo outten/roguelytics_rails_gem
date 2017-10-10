@@ -13,6 +13,9 @@ module Roguelytics
 #
 # Roguelytics Initializer
 #
+
+require 'roguelytics'
+
 ROGUELYTICS_SITEKEY = '' if Rails.env.production?
 ROGUELYTICS_SITEKEY = '' if Rails.env.staging?
 ROGUELYTICS_SITEKEY = '' if Rails.env.development?

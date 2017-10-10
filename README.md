@@ -61,7 +61,7 @@ Roguelytics is distributed as a gem, which is how it should be used in your app.
 Include the gem in your Gemfile:
 
 ```ruby
-gem 'roguelytics', '>= 1.0.15'
+gem 'roguelytics', '>= 1.0.16'
 ```
 
 Quick Start
@@ -90,6 +90,10 @@ After you sign-up and get your keys, create a configuration file: config/initial
 #
 # Roguelytics Initializer
 #
+
+
+require 'roguelytics'
+
 ROGUELYTICS_SITEKEY = '<production key>' if Rails.env.production?
 ROGUELYTICS_SITEKEY = '<staging key>' if Rails.env.staging?
 ROGUELYTICS_SITEKEY = '<development key>' if Rails.env.development?
