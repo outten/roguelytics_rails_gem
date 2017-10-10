@@ -61,7 +61,7 @@ Roguelytics is distributed as a gem, which is how it should be used in your app.
 Include the gem in your Gemfile:
 
 ```ruby
-gem 'roguelytics', '~> 1.0.13'
+gem 'roguelytics', '>= 1.0.15'
 ```
 
 Quick Start
