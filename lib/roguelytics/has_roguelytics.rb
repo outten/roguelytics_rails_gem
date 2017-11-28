@@ -30,9 +30,9 @@ module Roguelytics
     module LocalInstanceMethods
       def roguelytics_get event, params
         if Rails.env.development?
-          Roguelytics::ProcessJob.perform_now event, params
+          Roguelytics::ProcessJob.perform_now event, params rescue nil
         else
-          Roguelytics::ProcessJob.perform_later event, params
+          Roguelytics::ProcessJob.perform_later event, params rescue nil
         end
       end
 
